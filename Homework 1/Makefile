@@ -1,0 +1,2 @@
+all: homework1.c
+	gcc -O3 -g3 -ftree-vectorize -march=ivybridge -fno-omit-frame-pointer -fopt-info-vec -lstdc++ -o homework1 ./homework1.c -I /usr/include/OpenBLAS/include/ -L/usr/lib/OpenBLAS/lib -lopenblas
